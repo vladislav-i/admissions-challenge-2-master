@@ -1,0 +1,112 @@
+body {
+	background-color:#000;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+	background-image:url(img/bg.png);	
+}
+
+
+#play {
+  display:none;
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #b82bb8);
+  background-image: -moz-linear-gradient(top, #3498db, #b82bb8);
+  background-image: -ms-linear-gradient(top, #3498db, #b82bb8);
+  background-image: -o-linear-gradient(top, #3498db, #b82bb8);
+  background-image: linear-gradient(to bottom, #3498db, #b82bb8);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  position:absolute;
+  	 top:360px;
+     left:445px;
+     
+  z-index: 2;
+}
+
+
+#play:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #fa0a7e);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #fa0a7e);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #fa0a7e);
+  background-image: -o-linear-gradient(top, #3cb0fd, #fa0a7e);
+  background-image: linear-gradient(to bottom, #3cb0fd, #fa0a7e);
+  text-decoration: none;
+}
+
+#board {
+  background: #ccc;
+  width: 300px; height: 300px;
+  margin: auto;
+  margin-top:230px;	
+  z-index: 1; 
+}
+#board .space {
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+  float: left;
+  line-height: 100px;
+  text-align: center;
+  width: 100px; height: 100px;
+}
+#board .space:hover {
+  cursor: pointer;
+  background: #ddd;
+}
+
+/* Change background picture based on class name */
+#board .space.veggies {
+  background: url("img/veggies.jpg");
+  background-size: 100% 100%;
+  opacity:1;
+}
+#board .space.junkfood {
+  background: url("img/junkfood.jpg");
+  background-size: 100% 100%;
+  opacity:1;
+}
+
+#board2 {
+  	width: 300px; height: 300px;
+	position: relative;
+  	top: -300px;
+	text-align:center;
+}
+
+
+#score {
+	color:#FFF;
+	width:200px;
+	height:100px;
+	display:none;
+	position:fixed;
+    left:116px;
+    top:231px;
+	
+}
+.scoreFont {
+	color:#FF0000;
+	font-size:20px;	
+}
+
+.playerTurn {
+	color:#FFF;
+	position:fixed;
+    left:440px;
+    top:180px;
+	text-align:center;
+	
+}
+
+#btn {
+	margin-top:auto;
+	margin-bottom:auto;
+	width: 1000px;
+}
